@@ -1,0 +1,7 @@
+streamlit
+moviepy
+TTS
+openai-whisper
+sentence-transformers
+spacy
+pandas
