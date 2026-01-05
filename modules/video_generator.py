@@ -1,5 +1,5 @@
 ﻿import os, random
-from moviepy.editor import *
+from moviepy import VideoFileClip, AudioFileClip, TextClip, CompositeVideoClip
 from TTS.api import TTS
 from moviepy.editor import TextClip, CompositeVideoClip
 
@@ -25,3 +25,4 @@ def generate_video(script_text, bg_dir, out_path):
     ).set_position(("center", "bottom")).set_duration(final.duration)
 
     final = CompositeVideoClip([final, subtitle])
+
